@@ -10,6 +10,7 @@ layout: "base.njk"
     {%- for post in collections.post -%}
     <li>
       <article class="snippet">
+        <img src ="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet_image">
         <h3 class="snippet__title">{{post.data.title}}</h3>
       </article>
     </li>
@@ -17,4 +18,3 @@ layout: "base.njk"
   </ul>
 </div>
 
-</html>
